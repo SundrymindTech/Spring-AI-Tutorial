@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: spring-ai-tutorial
+
+  ai:
+    ollama:
+      base-url: http://localhost:11434 # Ollama server URL
+      chat:
+        model: llama3.2 # Model name
+        options:
+          temperature: 0.7 # Creativity level (0.0-1.0)
+          top-p: 0.9 # Nucleus sampling parameter
+          max-tokens: 1000 # Maximum response length
+
+  autoconfigure:
+    exclude:
+      - org.springframework.ai.autoconfigure.vectorstore.chroma.ChromaVectorStoreAutoConfiguration
+
+server:
+  port: 8080
+
+logging:
+  level:
+    com.sundrymind.springaitutorial: DEBUG
+    org.springframework.ai: DEBUG
+    org.springframework.web: DEBUG
