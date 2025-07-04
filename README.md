@@ -1,5 +1,5 @@
 # Spring AI + Ollama Integration Example  
-A demo project for the [Spring AI Ollama Tutorial](https://sundrymind.com/spring-ai-tutorial-ollama-integration/).  
+A demo project for the [Spring AI Ollama Integration Tutorial](https://sundrymind.com/spring-ai-tutorial-ollama-integration/) .  
 
 ## Features  
 - Load Ollama models (Llama2, Mistral) in Spring Boot.  
